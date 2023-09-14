@@ -1,5 +1,5 @@
 {
-  "name": "googlebooks-app",
+  "name": "book-search-engine",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
@@ -9,10 +9,24 @@
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jheeebert/book-search-engine.git"
+    },
+  "bugs": {
+    "url": "https://github.com/jheeebert/book-search-engine/issues"
+    },
+  "homepage": "https://github.com/jheeebert/book-search-engine#readme",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "@apollo/react-hooks": "^4.0.0",
+    "apollo-server-express": "^2.15.0",
+    "install":"0.13.0",
+    "npm":"10.1.0"
   }
 }
