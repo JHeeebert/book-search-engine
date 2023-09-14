@@ -22,7 +22,7 @@ server.applyMiddleware({ app });
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Serve up static assets from the /public folder in our application if we're in production
+// Serve up static assets
 const _dirname = path.dirname('');
 const pathToFile = path.join(_dirname, '../client/build');
 app.use(express.static(pathToFile));
