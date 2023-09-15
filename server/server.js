@@ -5,6 +5,8 @@ const path = require('path');
 const { ApolloServer } = require('apollo-server-express');
 const { authMiddleware } = require('./utils/auth');
 const { typeDefs, resolvers } = require('./schemas');
+// Add SweetAlert2 
+const Swal = require('sweetalert2');
 // import connection to database and create a new Apollo server
 const db = require('./config/connection');
 const routes = require('./routes');

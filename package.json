@@ -12,10 +12,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jheeebert/book-search-engine.git"
-    },
+  },
   "bugs": {
     "url": "https://github.com/jheeebert/book-search-engine/issues"
-    },
+  },
   "homepage": "https://github.com/jheeebert/book-search-engine#readme",
   "keywords": [],
   "author": "",
@@ -26,7 +26,8 @@
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
     "apollo-server-express": "^2.15.0",
-    "install":"0.13.0",
-    "npm":"10.1.0"
+    "install": "0.13.0",
+    "npm": "10.1.0",
+    "sweetalert2": "^11.7.28"
   }
 }
