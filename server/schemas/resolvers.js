@@ -7,7 +7,7 @@ const Swal = require('sweetalert2');
 // Create the functions that fulfill the queries defined in `typeDefs.js`
 const resolvers = {
     Query: {
-        me: async (_, _, context) => {
+        me: async (_, __, context) => {
             if (context.user) {
                 throw new AuthenticationError('You need to be logged in!');
             }
