@@ -1,17 +1,26 @@
+/* Base styles */
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
-
+/* Heading styles */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik Mono One', sans-serif;
+  font-family: "Rubik Mono One", sans-serif;
 }
-
+/* Custom styles for specific elements */
 .small {
   font-weight: 300;
   font-style: italic;
 }
+/* Additional styling for headings */
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+/* Add more styles as needed */
