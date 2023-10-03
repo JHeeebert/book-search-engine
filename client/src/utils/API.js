@@ -1,57 +1,53 @@
-// route to get logged in user's info (needs the token)
+// Route to get logged-in user's info (requires token)
 export const getMe = (token) => {
-  return fetch('/api/users/me', {
+  return fetch("/api/users/me", {
     headers: {
-      'Content-Type': 'application/json',
-      authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
     },
   });
 };
-
+// Create a new user
 export const createUser = (userData) => {
-  return fetch('/api/users', {
-    method: 'POST',
+  return fetch("/api/users", {
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
     body: JSON.stringify(userData),
   });
 };
-
+// Log in a user
 export const loginUser = (userData) => {
-  return fetch('/api/users/login', {
-    method: 'POST',
+  return fetch("/api/users/login", {
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
     body: JSON.stringify(userData),
   });
 };
-
-// save book data for a logged in user
+// Save book data for a logged-in user
 export const saveBook = (bookData, token) => {
-  return fetch('/api/users', {
-    method: 'PUT',
+  return fetch("/api/users", {
+    method: "PUT",
     headers: {
-      'Content-Type': 'application/json',
-      authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
     },
     body: JSON.stringify(bookData),
   });
 };
-
-// remove saved book data for a logged in user
+// Remove saved book data for a logged-in user
 export const deleteBook = (bookId, token) => {
   return fetch(`/api/users/books/${bookId}`, {
-    method: 'DELETE',
+    method: "DELETE",
     headers: {
-      authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${token}`,
     },
   });
 };
-
-// make a search to google books api
-// https://www.googleapis.com/books/v1/volumes?q=harry+potter
+// Make a search to Google Books API
 export const searchGoogleBooks = (query) => {
   return fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}`);
 };
