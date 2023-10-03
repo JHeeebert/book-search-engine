@@ -1,8 +1,9 @@
 {
   "name": "jheeebert-book-search-engine",
   "version": "1.0.0",
-  "description": "",
+  "description": "Book search engine project",
   "main": "server/server.js",
+  "proxy": "http://localhost:3001",
   "scripts": {
     "start": "node server/server.js",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
@@ -18,7 +19,7 @@
   },
   "homepage": "https://github.com/jheeebert/jheeebert-book-search-engine",
   "keywords": [],
-  "author": "",
+  "author": "Your Name",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0"
@@ -26,8 +27,8 @@
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
     "apollo-server-express": "^2.15.0",
-    "install": "^0.13.0",
-    "npm": "^10.1.0",
+    "dotenv": "^10.0.0", 
+    "express": "^4.17.1", 
     "sweetalert2": "^11.7.31"
   }
 }
