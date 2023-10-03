@@ -1,38 +1,49 @@
 import React, { useState } from "react";
+
 import { Form, Button, Alert } from "react-bootstrap";
 
+import Swal from "sweetalert2";
+
+import "sweetalert2/dist/sweetalert2.min.css";
+
 import Auth from "../utils/auth";
+
 import { useMutation } from "@apollo/react-hooks";
+
 import { ADD_USER } from "../utils/mutations";
 
 const SignupForm = () => {
-  // set initial form state
   const [userFormData, setUserFormData] = useState({
     username: "",
+
     email: "",
+
     password: "",
   });
-  // set state for form validation
-  const [validated] = useState(false);
-  // set state for alert
+
+  const [validated, setValidated] = useState(false);
+
   const [showAlert, setShowAlert] = useState(false);
-  // define mutation for adding a user
+
   const [createUser] = useMutation(ADD_USER);
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
+
     setUserFormData({ ...userFormData, [name]: value });
   };
 
   const handleFormSubmit = async (event) => {
-    console.log('form submitted');
     event.preventDefault();
 
-    // check if form has everything (as per react-bootstrap docs)
     const form = event.currentTarget;
+
     if (form.checkValidity() === false) {
-      event.preventDefault();
       event.stopPropagation();
+
+      setValidated(true); // Show validation feedback
+
+      return;
     }
 
     try {
@@ -40,24 +51,47 @@ const SignupForm = () => {
         variables: { ...userFormData },
       });
 
-      Auth.login(data.addUser.token);
+      if (data && data.addUser && data.addUser.token) {
+        Auth.login(data.addUser.token);
+      } else {
+        console.error("Unexpected response from server:", data);
+
+        Swal.fire({
+          icon: "error",
+
+          title: "Oops...",
+
+          text: "Something went wrong with your signup!",
+        });
+      }
     } catch (err) {
-      console.error(err);
-      setShowAlert(true);
+      console.error("Error during mutation:", err);
+
+      Swal.fire({
+        icon: "error",
+
+        title: "Oops...",
+
+        text: err.message || "Something went wrong with your signup!",
+      });
     }
+
+    // Clear the form after submission
 
     setUserFormData({
       username: "",
+
       email: "",
+
       password: "",
     });
+
+    setValidated(false);
   };
 
   return (
     <>
-      {/* This is needed for the validation functionality above */}
       <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
-        {/* show alert if server response is bad */}
         <Alert
           dismissible
           onClose={() => setShowAlert(false)}
@@ -69,6 +103,7 @@ const SignupForm = () => {
 
         <Form.Group>
           <Form.Label htmlFor="username">Username</Form.Label>
+
           <Form.Control
             type="text"
             placeholder="Your username"
@@ -77,6 +112,7 @@ const SignupForm = () => {
             value={userFormData.username}
             required
           />
+
           <Form.Control.Feedback type="invalid">
             Username is required!
           </Form.Control.Feedback>
@@ -84,6 +120,7 @@ const SignupForm = () => {
 
         <Form.Group>
           <Form.Label htmlFor="email">Email</Form.Label>
+
           <Form.Control
             type="email"
             placeholder="Your email address"
@@ -92,6 +129,7 @@ const SignupForm = () => {
             value={userFormData.email}
             required
           />
+
           <Form.Control.Feedback type="invalid">
             Email is required!
           </Form.Control.Feedback>
@@ -99,6 +137,7 @@ const SignupForm = () => {
 
         <Form.Group>
           <Form.Label htmlFor="password">Password</Form.Label>
+
           <Form.Control
             type="password"
             placeholder="Your password"
@@ -107,10 +146,12 @@ const SignupForm = () => {
             value={userFormData.password}
             required
           />
+
           <Form.Control.Feedback type="invalid">
             Password is required!
           </Form.Control.Feedback>
         </Form.Group>
+
         <Button
           disabled={
             !(
