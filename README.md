@@ -82,13 +82,13 @@ Live Heroku Link: https://jheeebert-book-search-engine-96341c0d62be.herokuapp.co
 3. Make the necessary changes and commit them: ` git commit -m "Description of changes"`
 4. Push your changes to your forked repository: `git push origin my-branch`
    <br>
-   [![GitHub commits](https://badgen.net/github/commits/Jheeebert/pwa-text-editor)](https://GitHub.com/Jheeebert/book-search-engine/commit/)
-   [![GitHub latest commit](https://badgen.net/github/book-search-engine/last-commit/Jheeebert/pwa-text-editor)](https://GitHub.com/Jheeebert/book-search-engine/commit/)
-   [![GitHub forks](https://img.shields.io/github/forks/Jheeebert/book-search-engine.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/Jheeebert/book-search-engine/network/)
+   [![GitHub commits](https://badgen.net/github/commits/Jheeebert/jheeebert-book-search-engine)](https://GitHub.com/Jheeebert/jheeebert-book-search-engine/commit/)
+   [![GitHub latest commit](https://badgen.net/github/jheeebert-book-search-engine/last-commit/Jheeebert/pwa-text-editor)](https://GitHub.com/Jheeebert/jheeebert-book-search-engine/commit/)
+   [![GitHub forks](https://img.shields.io/github/forks/Jheeebert/jheeebert-book-search-engine.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/Jheeebert/jheeebert-book-search-engine/network/)
    <br>
 # Questions ❓📧❔
 
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Jheeebert/book-search-engine) <br>
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Jheeebert/jheeebert-book-search-engine) <br>
 * If you have any questions about the repo, open an issue @ link above or contact me directly at:  📧 wdfuzz8823@gmail.com 📧. <br>
 * You can find more of my work at 🔖 [Jheeebert](https://github.com/Jheeebert/) 🔖. <br>
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
