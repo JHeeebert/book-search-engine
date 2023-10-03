@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jheeebert/book-search-engine.git"
+    "url": "git+https://github.com/jheeebert/jheeebert-book-search-engine.git"
   },
   "bugs": {
-    "url": "https://github.com/jheeebert/book-search-engine/issues"
+    "url": "https://github.com/jheeebert/jheeebert-book-search-engine/issues"
   },
-  "homepage": "https://github.com/jheeebert/book-search-engine",
+  "homepage": "https://github.com/jheeebert/jheeebert-book-search-engine",
   "keywords": [],
   "author": "",
   "license": "ISC",
