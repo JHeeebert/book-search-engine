@@ -15,6 +15,7 @@ const server = new ApolloServer({
   resolvers,
   context: authMiddleware, // Attach authentication middleware
 });
+// Middleware to handle incoming requests
 server.applyMiddleware({ app });
 // Middleware to handle URL-encoded and JSON request bodies
 app.use(express.urlencoded({ extended: true }));
