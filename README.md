@@ -69,5 +69,5 @@ THEN I am logged out of the site and presented with a menu with the options Sear
 We welcome contributions! Please follow the steps outlined in [Contributors Covenant](https://www.contributor-covenant.org/).
 ## Questions
 - Ask anything: [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/jheeebert/book-search-engine)
-- Contact: youremail@example.com
+- Contact: jheeebertwd@gmail.com
 - More of our work: [GitHub Profile](https://github.com/jheeebert/)
