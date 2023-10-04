@@ -1,12 +1,7 @@
-# book-search-engine
-# Description 📈
-```md
-AS AN avid reader
-I WANT to search for new books to read
-SO THAT I can keep a list of books to purchase
-```
-
-# Acceptance Criteria 📝
+# Book Search Engine 📚
+## Description
+Welcome to the Book Search Engine, a platform designed to cater to avid readers who seek new books to explore. This application allows users to search for books and maintain a curated list of books for potential purchase.
+## Acceptance Criteria
 ```md
 GIVEN a book search engine
 WHEN I load the search engine
@@ -38,57 +33,41 @@ THEN that book is deleted from my saved books list
 WHEN I click on the Logout button
 THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
 ```
-# Table of Contents 📓
+## Table of Contents
+- [Book Search Engine 📚](#book-search-engine-)
+  - [Description](#description)
+  - [Acceptance Criteria](#acceptance-criteria)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Screenshots](#screenshots)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Questions](#questions)
 
-- [book-search-engine](#book-search-engine)
-- [Description 📈](#description-)
-- [Acceptance Criteria 📝](#acceptance-criteria-)
-- [Table of Contents 📓](#table-of-contents-)
-- [Installation 💻](#installation-)
-- [Usage 📎](#usage-)
-- [License 📂](#license-)
-- [Contributing 🔍](#contributing-)
-- [Questions ❓📧❔](#questions-)
-
-# Installation 💻
-
-- npm i (to install all dependencies)
-- npm start (to start the app)
-
-# Usage 📎
-
-Live Heroku Link: https://jheeebert-book-search-engine-96341c0d62be.herokuapp.com/
-
-   <strong>Main Page</strong> <br>
-   ![Main Page](./screenshots/mainPage.png) <br>
-   <strong>Search</strong> <br>
-   ![SearchBooks](./screenshots/searchImage.png) <br>
-   <strong>Saved Books</strong> <br>
-   ![SavedBooks](./screenshots/) <br>
-   <strong>Delete Books</strong> <br>
-   ![DeleteUser](./screenshots/) <br>
-   <strong>Users</strong> <br>
-   ![Users](/screenshots/) <br>
-
-# License 📂
-[![GitHub license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
-
-# Contributing 🔍
-
-[Contributors Covenant](https://www.contributor-covenant.org/) <br>
-
-1. Fork the repository on GitHub.
-2. Create a new branch with a descriptive name: `git checkout -b my-branch`
-3. Make the necessary changes and commit them: ` git commit -m "Description of changes"`
-4. Push your changes to your forked repository: `git push origin my-branch`
-   <br>
-   [![GitHub commits](https://badgen.net/github/commits/Jheeebert/jheeebert-book-search-engine)](https://GitHub.com/Jheeebert/jheeebert-book-search-engine/commit/)
-   [![GitHub latest commit](https://badgen.net/github/jheeebert-book-search-engine/last-commit/Jheeebert/pwa-text-editor)](https://GitHub.com/Jheeebert/jheeebert-book-search-engine/commit/)
-   [![GitHub forks](https://img.shields.io/github/forks/Jheeebert/jheeebert-book-search-engine.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/Jheeebert/jheeebert-book-search-engine/network/)
-   <br>
-# Questions ❓📧❔
-
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Jheeebert/jheeebert-book-search-engine) <br>
-* If you have any questions about the repo, open an issue @ link above or contact me directly at:  📧 wdfuzz8823@gmail.com 📧. <br>
-* You can find more of my work at 🔖 [Jheeebert](https://github.com/Jheeebert/) 🔖. <br>
-[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
+## Installation
+1. Clone the repository: `git clone https://github.com/jheeebert/book-search-engine.git`
+2. Navigate to the project directory: `cd book-search-engine`
+3. Install dependencies: `npm install`
+## Usage
+- Run the app: `npm start`
+- Open your browser and visit: `http://localhost:3000`
+## Screenshots
+- **Main Page** <br>
+  ![Main Page](./screenshots/mainPage.png)
+- **Search** <br>
+  ![Search Books](./screenshots/searchImage.png)
+- **Saved Books** <br>
+  ![Saved Books](./screenshots/savedBooksImage.png)
+- **Delete Books** <br>
+  ![Delete Books](./screenshots/deleteBooksImage.png)
+- **Users** <br>
+  ![Users](./screenshots/usersImage.png)
+## License
+[![GitHub license](https://badgen.net/github/license/jheeebert/book-search-engine)](LICENSE)
+## Contributing
+We welcome contributions! Please follow the steps outlined in [Contributors Covenant](https://www.contributor-covenant.org/).
+## Questions
+- Ask anything: [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/jheeebert/book-search-engine)
+- Contact: youremail@example.com
+- More of our work: [GitHub Profile](https://github.com/jheeebert/)
